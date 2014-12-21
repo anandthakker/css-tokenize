@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/anandthakker/css-tokenize/issues"
   },
-  "homepage": "https://github.com/anandthakker/css-tokenize"
+  "homepage": "https://github.com/anandthakker/css-tokenize",
+  "devDependencies": {
+    "tape": "^3.0.3",
+    "through2": "^0.6.3"
+  },
+  "dependencies": {
+    "inherits": "^2.0.1",
+    "readable-stream": "^1.0.33"
+  }
 }
