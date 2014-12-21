@@ -89,16 +89,16 @@ Tokenize.prototype._transform = function(buf, enc, next) {
       this.state.push(['string', c]);
     }
     /* brackets */
-    else if(codes.lparen === c) {
-      this.state.push(['brackets', codes.rparen]);
-    }
-    else if(codes.lbrack === c) {
-      this.state.push(['brackets', codes.rbrack]);
-    }
-    else if('brackets' === state
-    && c === stateData) {
-      this.state.pop();
-    }
+    // else if(codes.lparen === c) {
+    //   this.state.push(['brackets', codes.rparen]);
+    // }
+    // else if(codes.lbrack === c) {
+    //   this.state.push(['brackets', codes.rbrack]);
+    // }
+    // else if('brackets' === state
+    // && c === stateData) {
+    //   this.state.pop();
+    // }
     /* rules */
     else if('rule_start' === state
     && c === codes.lbrace) {
