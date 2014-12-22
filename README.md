@@ -1,4 +1,4 @@
-css-tokenize
+css-tokenize [![Build Status](https://travis-ci.org/anandthakker/css-tokenize.svg?branch=master)](https://travis-ci.org/anandthakker/css-tokenize)
 ============
 
 Coarsely tokenize a stream of CSS, largely modeled after 
