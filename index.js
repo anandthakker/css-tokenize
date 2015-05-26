@@ -164,7 +164,7 @@ Tokenize.prototype._transform = function(buf, enc, next) {
 Tokenize.prototype._flush = function (next) {
   if(this._input)
     this.push([this.state.pop()[0], this._input.slice(this._position)]);
-  if(this.state.length !== 0) {
+  if(this.state.length !== 0 && this.state[0][0] === 'root') {
     console.warn("[css-tokenize] unfinished business", this.state);
   }
   this.push(null);
